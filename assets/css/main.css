@@ -147,7 +147,6 @@ a:hover:before {
 }
 
 strong, b {
-	color: #3c3b3b;
 	font-weight: 700;
 }
 
@@ -176,6 +175,7 @@ h2 {
 
 h3 {
 	font-size: 0.9em;
+	margin: 1em 0;
 }
 
 .after {
@@ -227,8 +227,13 @@ hr {
 .gap-2 {
 	gap: .5rem;
 }
+
 .mb-0 {
 	margin-bottom: 0;
+}
+
+.ml-8 {
+	margin-left: 2rem;
 }
 
 .bold {
