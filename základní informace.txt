@@ -35,3 +35,13 @@ napiš mi základní informace bych chtěla vědět populace, bezpečnost, nábo
 💡 Typy před návštěvou země
 
 
+
+
+Retz v rakousku - napiš mi základní informace o místě ve větách. 
+Taky potřebuju nějaký nápady na nadpis.
+
+Pak potřebuju perex podobný tomuhle:
+Zajímá tě Egypt? Chceš zjistit, jak to v téhle záhadami opředené zemi vypadá dnes?
+Země faraonů, pyramid a žhavého slunce. Egypt je fascinující mix dávné historie a orientální atmosféry. Projdeš se mezi tisíce let starými památkami, necháš se unést vůní koření i kouřem z vodní dýmky a užiješ si koupání v teplém moři i ticho saharské pouště.
+
+následně potřebuju ještě keywords a description do html
