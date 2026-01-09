@@ -711,10 +711,11 @@ img {
 }
 
 .flex img {
-	max-width: 200px;
 	cursor: pointer;
 	border-radius: 8px;
 	transition: transform 0.2s;
+	height: 112px;
+    width: fit-content;
 }
 
 .flex img:hover {
@@ -736,9 +737,9 @@ img {
 }
 
 .lightbox img {
-	max-width: 70%;
-	max-height: fit-content;
-	  border-radius: 10px;
+	width: fit-content;
+	height: 80%;
+	border-radius: 10px;
 	margin-top: 30px;
 }
 
@@ -1194,6 +1195,10 @@ header p {
 
 .perex p {
 	margin-left: 1rem;
+}
+
+.post:nth-of-type(even) .perex {
+    flex-direction: row-reverse;
 }
 
 .flex-row-reverse p {
@@ -1836,6 +1841,7 @@ body.is-menu-visible #menu {
 
 	.flex img {
 		max-width: 100%;
+		height: auto;
 	}
 
 	.flex img:hover {
