@@ -60,28 +60,43 @@ function closeLightbox() {
 const posts = document.querySelectorAll('#main article.post');
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
+const pageInfo = document.getElementById('pageInfo');
 
 const itemsPerPage = 5; /* počet článků na stránce */
 let currentPage = 1;
 const totalPages = Math.ceil(posts.length / itemsPerPage);
 
 function renderPage(page) {
-	// schovej všechny články
 	posts.forEach(post => (post.style.display = 'none'));
 
-	// zobraz jen články pro aktuální stránku
 	const start = (page - 1) * itemsPerPage;
 	const end = start + itemsPerPage;
 	for (let i = start; i < end && i < posts.length; i++) {
 		posts[i].style.display = 'block';
 	}
 
-	// tlačítka aktivní/neaktivní
 	prevBtn.classList.toggle('disabled', page === 1);
 	nextBtn.classList.toggle('disabled', page === totalPages);
 
+	if (pageInfo) {
+		pageInfo.textContent = `Strana ${page} z ${totalPages}`;
+	}
+
 	currentPage = page;
+
+	const headerHeight = $('#header').outerHeight() || 0;
+	const bodyPadding = parseInt($('body').css('padding-top')) || 0;
+
+	const first = $('#main article.post:visible').first();
+
+	if (first.length) {
+		const target = first.offset().top - headerHeight - bodyPadding - 10;
+
+		$('html, body').stop().animate({ scrollTop: target }, 400);
+		$('#wrapper').stop().animate({ scrollTop: target }, 400);
+	}
 }
+
 
 prevBtn.addEventListener('click', e => {
 	e.preventDefault();
@@ -99,6 +114,7 @@ nextBtn.addEventListener('click', e => {
 
 // při načtení stránky zobraz první stránku
 renderPage(1);
+
 
 
 
