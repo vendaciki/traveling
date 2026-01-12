@@ -99,3 +99,100 @@ nextBtn.addEventListener('click', e => {
 
 // při načtení stránky zobraz první stránku
 renderPage(1);
+
+
+
+
+// POČÍTADLO MÍST
+document.addEventListener("DOMContentLoaded", () => {
+	const posts = document.querySelectorAll("article.post");
+
+	const countries = new Set();
+	const cities = new Set();
+
+	const cityCount = {};
+	const countryCount = {};
+	const countryCities = {};
+
+	posts.forEach(post => {
+		const country = post.dataset.country;
+		const cityList = post.dataset.city;
+
+		// ZEMĚ
+		if (country && country.trim() !== "") {
+			country.split(",").forEach(c => {
+				const cc = c.trim();
+				if (cc !== "") {
+					countries.add(cc);
+					countryCount[cc] = (countryCount[cc] || 0) + 1;
+
+					if (!countryCities[cc]) {
+						countryCities[cc] = new Set();
+					}
+				}
+			});
+		}
+
+		// MĚSTA
+		if (cityList && cityList.trim() !== "") {
+			cityList.split(",").forEach(city => {
+				const c = city.trim();
+				if (c !== "") {
+					cities.add(c);
+					cityCount[c] = (cityCount[c] || 0) + 1;
+
+					// přiřadíme město ke všem státům článku
+					if (country) {
+						country.split(",").forEach(cc => {
+							const clean = cc.trim();
+							if (countryCities[clean]) {
+								countryCities[clean].add(c);
+							}
+						});
+					}
+				}
+			});
+		}
+	});
+
+	// Základní čísla
+	document.getElementById("stat-trips").textContent = posts.length;
+	document.getElementById("stat-countries").textContent = countries.size;
+	document.getElementById("stat-cities").textContent = cities.size;
+
+	// TOP MĚSTA
+	const sortedCities = Object.entries(cityCount).sort((a,b)=>b[1]-a[1]);
+	const list = document.getElementById("top-cities-list");
+	list.innerHTML = "";
+
+	sortedCities.slice(0,3).forEach(([city,count],i)=>{
+		const li=document.createElement("li");
+		li.innerHTML=`<strong>${i+1}.</strong> ${city} <span>(${count}×)</span>`;
+		list.appendChild(li);
+	});
+
+	// 🏆 NEJLEPŠÍ STÁT (počty článků + tie-break podle měst)
+	let topCountry = "–";
+	let topCount = 0;
+	let topCityCount = 0;
+
+	for (const c in countryCount) {
+		const visits = countryCount[c];
+		const cityAmount = countryCities[c]?.size || 0;
+
+		if (
+			visits > topCount ||
+			(visits === topCount && cityAmount > topCityCount)
+		) {
+			topCount = visits;
+			topCityCount = cityAmount;
+			topCountry = c;
+		}
+	}
+
+	if (topCount > 0) {
+		document.getElementById("stat-top-country").textContent =
+			`${topCountry} (${topCount}×)`;
+	}
+});
+

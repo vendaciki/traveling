@@ -1015,6 +1015,7 @@ ul.posts article header > :last-child {
 	background: #ffffff;
 	border: solid 1px rgba(160, 160, 160, 0.3);
 	margin: 0 0 2em 0;
+	box-shadow: 5px 5px 10px 2px lightgrey;
 }
 
 .mini-post .image {
@@ -1079,8 +1080,9 @@ ul.posts article header > :last-child {
 	padding: 3em;
 	background: #ffffff;
 	border: solid 1px rgba(160, 160, 160, 0.3);
-	margin: 0 0 3em 0;
+	margin: 0 0 2rem 0;
 	position: relative;
+	box-shadow: 5px 5px 10px 2px lightgrey;
 }
 
 .post > header {
@@ -1494,7 +1496,33 @@ body.single #wrapper {
 }
 
 
+.about ul {
+	padding-left: 1rem;
+}
 
+.about ul ul {
+	padding-left: 3rem;
+	margin-top: 0;
+}
+
+.about li {
+	list-style: none;
+}
+
+.top-list {
+	margin-top: 10px;
+	padding-left: 0;
+	list-style: none;
+}
+
+.top-list li {
+	font-size: 0.9em;
+}
+
+.top-list span {
+	color: #888;
+	font-size: 0.85em;
+}
 
 
 .mapa {
@@ -1502,6 +1530,7 @@ body.single #wrapper {
 	margin-left: 1rem;
 	max-width: 600px;
 }
+
 
 
 

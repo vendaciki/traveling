@@ -44,4 +44,13 @@ Pak potřebuju perex podobný tomuhle:
 Zajímá tě Egypt? Chceš zjistit, jak to v téhle záhadami opředené zemi vypadá dnes?
 Země faraonů, pyramid a žhavého slunce. Egypt je fascinující mix dávné historie a orientální atmosféry. Projdeš se mezi tisíce let starými památkami, necháš se unést vůní koření i kouřem z vodní dýmky a užiješ si koupání v teplém moři i ticho saharské pouště.
 
-následně potřebuju ještě keywords a description do html
+následně potřebuju ještě 
+<title>... – Tipy, zážitky a inspirace | Cestovatelský blog</title>
+<meta name="description" content="">
+
+<meta property="og:title" content="Náš blog o cestování | ...">
+<meta property="og:description" content="">
+<meta property="og:image" content="../../images/future.webp">
+<meta property="og:url" content=""> <!-- NEVYPLŇOVAT -->
+
+<meta name="keywords" content="">
