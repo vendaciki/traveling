@@ -454,6 +454,13 @@ const places = [
         visited: "",
 		image: "../../images/karty/TadzMahal.png"
 	},
+	{
+		name: "Srí Lanka",
+		country: "Srí Lanka",
+		state: "hidden",
+        visited: "",
+		image: "../../images/karty/SriLanka.png"
+	},
     /*{
 		name: "",
 		country: "",
