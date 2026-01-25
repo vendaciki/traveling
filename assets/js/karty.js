@@ -35,6 +35,13 @@ const places = [
 		image: "../../images/karty/Barcelona.png"
 	},
     {
+		name: "Blanes",
+		country: "Španělsko",
+		state: "revealed",
+        visited: "2021-08-01",
+		image: "../../images/karty/Blanes.png"
+	},
+    {
 		name: "Bath",
 		country: "Anglie",
 		state: "revealed",
@@ -418,6 +425,34 @@ const places = [
 		state: "revealed",
         visited: "2022-09-07",
 		image: "../../images/karty/JanosikoveDiery.png"
+	},
+	{
+		name: "Kréta",
+		country: "Řecko",
+		state: "hidden",
+        visited: "",
+		image: "../../images/karty/Kreta.png"
+	},
+	{
+		name: "Mount Rushmore",
+		country: "USA",
+		state: "hidden",
+        visited: "",
+		image: "../../images/karty/MountRushmore.png"
+	},
+	{
+		name: "Národní parky",
+		country: "Norsko",
+		state: "hidden",
+        visited: "",
+		image: "../../images/karty/Norsko.png"
+	},
+	{
+		name: "Tádž Mahal",
+		country: "Indie",
+		state: "hidden",
+        visited: "",
+		image: "../../images/karty/TadzMahal.png"
 	},
     /*{
 		name: "",

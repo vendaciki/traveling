@@ -1225,6 +1225,7 @@ body {
 	display: -webkit-flex;
 	display: -ms-flex;
 	display: flex;
+	flex-wrap: wrap;
 	-moz-justify-content: space-between;
 	-webkit-justify-content: space-between;
 	-ms-justify-content: space-between;
@@ -1237,7 +1238,7 @@ body {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	z-index: 10000;
+	z-index: 1;
 }
 
 #header a {
@@ -1261,6 +1262,7 @@ body {
 	line-height: inherit;
 	padding: 0 0 0 1.5em;
 	white-space: nowrap;
+	margin: 0;
 }
 
 #header h1 a {
@@ -1276,7 +1278,7 @@ body {
 	height: inherit;
 	line-height: inherit;
 	margin-left: 1.5em;
-	overflow: hidden;
+	/* overflow: hidden; */
 	padding-left: 1.5em;
 }
 
@@ -1704,7 +1706,7 @@ ul ul li {
 .grid {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	gap: 24px;
+	gap: 10px;
 }
 
 .card {
@@ -1876,10 +1878,6 @@ ul ul li {
 		font-size: 12pt;
 	}
 
-	#header .links {
-		display: none;
-	}
-
 	.mapa {
 		width: 100%;
 		height: 300px;
@@ -2022,12 +2020,14 @@ ul ul li {
 	}
 
 	#header {
-		height: 2.75em;
+		height: auto;
 		line-height: 2.75em;
+		text-align: center;
 	}
 
 	#header h1 {
-		padding: 0 0 0 1em;
+		padding: 0;
+		width: 100%;
 	}
 
 	#header .main .search {
@@ -2068,6 +2068,16 @@ ul ul li {
 		margin: 0 0 1.5em 0;
 	}
 
+	.grid {
+		margin-top: 40px;
+	}
+
+	#header .links {
+		border-top: solid 1px rgba(160, 160, 160, 0.3);
+		border-left: none;
+		margin: 0;
+		padding: 0;
+	}
 }
 
 @media (max-width: 640px) {
