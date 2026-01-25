@@ -1700,7 +1700,99 @@ ul ul li {
 
 
 
-@media screen and (max-width: 1680px) {
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 24px;
+}
+
+.card {
+	aspect-ratio: 3 / 2;
+	perspective: 1000px;
+	border: 1px solid #bdbdbd;
+    border-radius: 14px;
+}
+
+.card-inner {
+ 	width: 100%;
+	height: 100%;
+	position: relative;
+	transform-style: preserve-3d;
+	transition: transform 1s ease;
+}
+
+.card[data-state="revealed"] .card-inner {
+  	transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+	position: absolute;
+	inset: 0;
+	border-radius: 14px;
+	overflow: hidden;
+	backface-visibility: hidden;
+}
+
+.card-front {
+	background:
+		linear-gradient(135deg, #2f3e46, #354f52);
+	color: #fdfcf9;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.card-front h2 {
+	margin: 0;
+	font-size: 1.1rem;
+	letter-spacing: 0.2em;
+	color: #ffffff;
+}
+
+.card-front span {
+	margin-top: 8px;
+	font-size: 0.8rem;
+	opacity: 0.75;
+}
+
+.card-back {
+  	transform: rotateY(180deg);
+}
+
+.card-back img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.card-back .label {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	padding: 6px 10px;
+	background: rgba(0,0,0,0.55);
+	color: #fff;
+	font-size: 0.8rem;
+	border-radius: 8px;
+}
+
+/* ODKRYTÉ KARTY PRVNÍ */
+.card[data-state="revealed"] {
+  order: 1;
+}
+
+/* SKRYTÉ KARTY POTOM */
+.card[data-state="hidden"] {
+  order: 2;
+}
+
+
+
+@media (max-width: 1680px) {
 	body, input, select, textarea {
 		font-size: 12pt;
 	}
@@ -1714,7 +1806,7 @@ ul ul li {
 	}
 }
 
-@media screen and (max-width: 1280px) {
+@media (max-width: 1280px) {
 	body, input, select, textarea {
 		font-size: 12pt;
 	}
@@ -1772,7 +1864,14 @@ ul ul li {
 
 }
 
-@media screen and (max-width: 980px) {
+@media (max-width: 1024px) {
+	.grid {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+	}
+}
+
+@media (max-width: 980px) {
 	body, input, select, textarea {
 		font-size: 12pt;
 	}
@@ -1870,7 +1969,7 @@ ul ul li {
 
 }
 
-@media screen and (max-width: 736px) {
+@media (max-width: 736px) {
 	body, input, select, textarea {
 		font-size: 12pt;
 	}
@@ -1971,7 +2070,22 @@ ul ul li {
 
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 640px) {
+	.grid {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 16px;
+	}
+
+	.card-front h2 {
+		font-size: 0.9rem;
+	}
+
+	.card-front span {
+		font-size: 0.7rem;
+	}
+}
+
+@media (max-width: 480px) {
 	body, input, select, textarea {
 		font-size: 12pt;
 	}
