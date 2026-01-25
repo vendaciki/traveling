@@ -461,6 +461,13 @@ const places = [
         visited: "",
 		image: "../../images/karty/SriLanka.png"
 	},
+	{
+		name: "Slovinsko",
+		country: "Slovinsko",
+		state: "hidden",
+        visited: "",
+		image: "../../images/karty/Slovinsko.png"
+	},
     /*{
 		name: "",
 		country: "",
