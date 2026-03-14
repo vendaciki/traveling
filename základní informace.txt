@@ -50,7 +50,7 @@ následně potřebuju ještě
 
 <meta property="og:title" content="Náš blog o cestování | ...">
 <meta property="og:description" content="">
-<meta property="og:image" content="../../images/future.webp">
+<meta property="og:image" content="/images/future.webp">
 <meta property="og:url" content=""> <!-- NEVYPLŇOVAT -->
 
 <meta name="keywords" content="">

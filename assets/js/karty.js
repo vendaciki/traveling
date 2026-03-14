@@ -471,6 +471,13 @@ const places = [
         visited: "",
 		image: "../../images/karty/Slovinsko.png"
 	},
+	{
+		name: "Maledivy",
+		country: "Maledivy",
+		state: "hidden",
+        visited: "",
+		image: "../../images/karty/Maledivy.png"
+	},
     /*{
 		name: "",
 		country: "",
@@ -747,6 +754,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		"Polsko": "PL",
 		"Portoriko": "PR",
 		"Portugalsko": "PT",
+		"Príncipe": "ST-PR",
 		"Pulau Buru": "ID-MA-BU",
 		"Pulau Seram": "ID-MA-SE",
 		"Rakousko": "AT",
