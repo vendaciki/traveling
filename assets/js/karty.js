@@ -145,8 +145,8 @@ const places = [
     {
 		name: "Madeira",
 		country: "Portugalsko",
-		state: "hidden",
-        visited: "",
+		state: "revealed",
+        visited: "2026-05-25",
 		image: "../assets/images/karty/Madeira.png"
 	},
     {
