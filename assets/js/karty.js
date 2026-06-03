@@ -7,483 +7,483 @@ const places = [
 		country: "Portugalsko",
 		state: "hidden",
         visited: "",
-		image: "../../images/karty/Lisabon.png"
+		image: "../assets/images/karty/Lisabon.png"
 	},
 	{
 		name: "Alexandrie",
 		country: "Egypt",
 		state: "revealed",
         visited: "2025-10-05",
-		image: "../../images/karty/Alexandrie.png"
+		image: "../assets/images/karty/Alexandrie.png"
 	},
     {
 		name: "Angkor Wat",
 		country: "Kambodža",
 		state: "hidden",
         visited: "",
-		image: "../../images/karty/AngkorWat.png"
+		image: "../assets/images/karty/AngkorWat.png"
 	},
     {
 		name: "Athény",
 		country: "Řecko",
 		state: "hidden",
         visited: "",
-		image: "../../images/karty/Atheny.png"
+		image: "../assets/images/karty/Atheny.png"
 	},
     {
 		name: "Barcelona",
 		country: "Španělsko",
 		state: "revealed",
         visited: "2021-08-02",
-		image: "../../images/karty/Barcelona.png"
+		image: "../assets/images/karty/Barcelona.png"
 	},
     {
 		name: "Blanes",
 		country: "Španělsko",
 		state: "revealed",
         visited: "2021-08-01",
-		image: "../../images/karty/Blanes.png"
+		image: "../assets/images/karty/Blanes.png"
 	},
     {
 		name: "Bath",
 		country: "Anglie",
 		state: "revealed",
         visited: "2023-05-04",
-		image: "../../images/karty/Bath.png"
+		image: "../assets/images/karty/Bath.png"
 	},
     {
 		name: "Benátky",
 		country: "Itálie",
 		state: "revealed",
         visited: "2023-06-05",
-		image: "../../images/karty/Benatky.png"
+		image: "../assets/images/karty/Benatky.png"
 	},
     {
 		name: "Berlín",
 		country: "Německo",
 		state: "hidden",
         visited: "",
-		image: "../../images/karty/Berlin.png"
+		image: "../assets/images/karty/Berlin.png"
 	},
     {
 		name: "Bratislava",
 		country: "Slovensko",
 		state: "hidden",
         visited: "",
-		image: "../../images/karty/Bratislava.png"
+		image: "../assets/images/karty/Bratislava.png"
 	},
     {
 		name: "Budapešť",
 		country: "Maďarsko",
 		state: "revealed",
         visited: "2021-11-06",
-		image: "../../images/karty/Budapest.png"
+		image: "../assets/images/karty/Budapest.png"
 	},
     {
 		name: "Drážďany",
 		country: "Německo",
 		state: "revealed",
         visited: "2024-12-12",
-		image: "../../images/karty/Drazdany.png"
+		image: "../assets/images/karty/Drazdany.png"
 	},
     {
 		name: "Florencie",
 		country: "Itálie",
 		state: "revealed",
         visited: "2023-06-02",
-		image: "../../images/karty/Florencie.png"
+		image: "../assets/images/karty/Florencie.png"
 	},
     {
 		name: "Györ",
 		country: "Maďarsko",
 		state: "revealed",
         visited: "2018-08-26",
-		image: "../../images/karty/Gyor.png"
+		image: "../assets/images/karty/Gyor.png"
 	},
     {
 		name: "Island",
 		country: "Island",
 		state: "hidden",
         visited: "",
-		image: "../../images/karty/Island.png"
+		image: "../assets/images/karty/Island.png"
 	},
     {
 		name: "Káhira",
 		country: "Egypt",
 		state: "revealed",
         visited: "2024-10-19",
-		image: "../../images/karty/Kahira.png"
+		image: "../assets/images/karty/Kahira.png"
 	},
     {
 		name: "Kodaň",
 		country: "Dánsko",
 		state: "revealed",
         visited: "2023-10-04",
-		image: "../../images/karty/Kodan.png"
+		image: "../assets/images/karty/Kodan.png"
 	},
     {
 		name: "Krakov",
 		country: "Polsko",
 		state: "revealed",
         visited: "2022-03-24",
-		image: "../../images/karty/Krakov.png"
+		image: "../assets/images/karty/Krakov.png"
 	},
     {
 		name: "Londýn",
 		country: "Anglie",
 		state: "revealed",
         visited: "2020-08-05",
-		image: "../../images/karty/Londyn.png"
+		image: "../assets/images/karty/Londyn.png"
 	},
     {
 		name: "Malmö",
 		country: "Švédsko",
 		state: "revealed",
         visited: "2023-10-07",
-		image: "../../images/karty/Malmo.png"
+		image: "../assets/images/karty/Malmo.png"
 	},
     {
 		name: "Madeira",
 		country: "Portugalsko",
 		state: "hidden",
         visited: "",
-		image: "../../images/karty/Madeira.png"
+		image: "../assets/images/karty/Madeira.png"
 	},
     {
 		name: "Luoyang",
 		country: "Čína",
 		state: "revealed",
         visited: "2025-05-19",
-		image: "../../images/karty/Luoyang.png"
+		image: "../assets/images/karty/Luoyang.png"
 	},
     {
 		name: "Neapol",
 		country: "Itálie",
 		state: "revealed",
         visited: "2023-06-04",
-		image: "../../images/karty/Neapol.png"
+		image: "../assets/images/karty/Neapol.png"
 	},
     {
 		name: "Osvětim",
 		country: "Polsko",
 		state: "revealed",
         visited: "2022-09-03",
-		image: "../../images/karty/Osvetim.png"
+		image: "../assets/images/karty/Osvetim.png"
 	},
     {
 		name: "Pompeje",
 		country: "Itálie",
 		state: "revealed",
         visited: "2023-06-04",
-		image: "../../images/karty/Pompeje.png"
+		image: "../assets/images/karty/Pompeje.png"
 	},
     {
 		name: "Luxor",
 		country: "Egypt",
 		state: "revealed",
         visited: "2024-10-21",
-		image: "../../images/karty/Luxor.png"
+		image: "../assets/images/karty/Luxor.png"
 	},
     {
 		name: "Plitvička jezera",
 		country: "Chorvatsko",
 		state: "revealed",
         visited: "2023-09-24",
-		image: "../../images/karty/Plitvicka.png"
+		image: "../assets/images/karty/Plitvicka.png"
 	},
     {
 		name: "Řím",
 		country: "Itálie",
 		state: "revealed",
         visited: "2023-06-03",
-		image: "../../images/karty/Rim.png"
+		image: "../assets/images/karty/Rim.png"
 	},
     {
 		name: "Shaolin",
 		country: "Čína",
 		state: "revealed",
         visited: "2025-05-20",
-		image: "../../images/karty/Shaolin.png"
+		image: "../assets/images/karty/Shaolin.png"
 	},
     {
 		name: "Peking",
 		country: "Čína",
 		state: "revealed",
         visited: "2025-05-25",
-		image: "../../images/karty/Peking.png"
+		image: "../assets/images/karty/Peking.png"
 	},
     {
 		name: "Stonehange",
 		country: "Anglie",
 		state: "revealed",
         visited: "2023-05-03",
-		image: "../../images/karty/Stonehange.png"
+		image: "../assets/images/karty/Stonehange.png"
 	},
     {
 		name: "Phuket - Krabi",
 		country: "Thajsko",
 		state: "hidden",
         visited: "",
-		image: "../../images/karty/Krabi"
+		image: "../assets/images/karty/Krabi"
 	},
     {
 		name: "Šanghaj",
 		country: "Čína",
 		state: "revealed",
         visited: "2025-05-17",
-		image: "../../images/karty/Sanghaj.png"
+		image: "../assets/images/karty/Sanghaj.png"
 	},
     {
 		name: "Portsmouth",
 		country: "Anglie",
 		state: "revealed",
         visited: "2023-05-05",
-		image: "../../images/karty/Portsmouth.png"
+		image: "../assets/images/karty/Portsmouth.png"
 	},
     {
 		name: "Sarvár",
 		country: "Maďarsko",
 		state: "revealed",
         visited: "2022-06-26",
-		image: "../../images/karty/Sarvar.png"
+		image: "../assets/images/karty/Sarvar.png"
 	},
     {
 		name: "Paříž",
 		country: "Francie",
 		state: "hidden",
         visited: "",
-		image: "../../images/karty/Pariz.png"
+		image: "../assets/images/karty/Pariz.png"
 	},
     {
 		name: "Vysoké Tatry",
 		country: "Slovensko",
 		state: "revealed",
         visited: "2022-09-09",
-		image: "../../images/karty/Tatry.png"
+		image: "../assets/images/karty/Tatry.png"
 	},
     {
 		name: "Tokio",
 		country: "Japonsko",
 		state: "hidden",
         visited: "",
-		image: "../../images/karty/Tokio.png"
+		image: "../assets/images/karty/Tokio.png"
 	},
     {
 		name: "Vatikán",
 		country: "Vatikán",
 		state: "revealed",
         visited: "2023-06-03",
-		image: "../../images/karty/Vatikan.png"
+		image: "../assets/images/karty/Vatikan.png"
 	},
     {
 		name: "Oxford",
 		country: "Anglie",
 		state: "revealed",
         visited: "2025-10-14",
-		image: "../../images/karty/Oxford.png"
+		image: "../assets/images/karty/Oxford.png"
 	},
     {
 		name: "Wieliczka",
 		country: "Polsko",
 		state: "revealed",
         visited: "2022-03-26",
-		image: "../../images/karty/Wieliczka.png"
+		image: "../assets/images/karty/Wieliczka.png"
 	},
     {
 		name: "Xi´an",
 		country: "Čína",
 		state: "revealed",
         visited: "2025-05-19",
-		image: "../../images/karty/Xian.png"
+		image: "../assets/images/karty/Xian.png"
 	},
     {
 		name: "Keukenhof",
 		country: "Nizozemsko",
 		state: "revealed",
         visited: "2024-03-31",
-		image: "../../images/karty/Keukenhof.png"
+		image: "../assets/images/karty/Keukenhof.png"
 	},
     {
 		name: "Salisbury",
 		country: "Anglie",
 		state: "revealed",
         visited: "2023-05-04",
-		image: "../../images/karty/Salisbury.png"
+		image: "../assets/images/karty/Salisbury.png"
 	},
     {
 		name: "Vídeň",
 		country: "Rakousko",
 		state: "hidden",
         visited: "",
-		image: "../../images/karty/Viden.png"
+		image: "../assets/images/karty/Viden.png"
 	},
     {
 		name: "Brighton",
 		country: "Anglie",
 		state: "revealed",
         visited: "2020-08-07",
-		image: "../../images/karty/Brighton.png"
+		image: "../assets/images/karty/Brighton.png"
 	},
     {
 		name: "Edinburg",
 		country: "Skotsko",
 		state: "hidden",
         visited: "",
-		image: "../../images/karty/Edinburg.png"
+		image: "../assets/images/karty/Edinburg.png"
 	},
     {
 		name: "Madrid",
 		country: "Španělsko",
 		state: "hidden",
         visited: "",
-		image: "../../images/karty/Madrid.png"
+		image: "../assets/images/karty/Madrid.png"
 	},
     {
 		name: "Dubaj",
 		country: "SAE",
 		state: "hidden",
         visited: "",
-		image: "../../images/karty/Dubaj.png"
+		image: "../assets/images/karty/Dubaj.png"
 	},
     {
 		name: "Retz",
 		country: "Rakousko",
 		state: "revealed",
         visited: "2017-12-09",
-		image: "../../images/karty/Retz.png"
+		image: "../assets/images/karty/Retz.png"
 	},
     {
 		name: "Los Angeles",
 		country: "USA",
 		state: "hidden",
         visited: "",
-		image: "../../images/karty/LosAngeles.png"
+		image: "../assets/images/karty/LosAngeles.png"
 	},
     {
 		name: "San Francisco",
 		country: "USA",
 		state: "hidden",
         visited: "",
-		image: "../../images/karty/SanFrancisco.png"
+		image: "../assets/images/karty/SanFrancisco.png"
 	},
     {
 		name: "New York",
 		country: "USA",
 		state: "hidden",
         visited: "",
-		image: "../../images/karty/NewYork.png"
+		image: "../assets/images/karty/NewYork.png"
 	},
     {
 		name: "Yellowstone",
 		country: "USA",
 		state: "hidden",
         visited: "",
-		image: "../../images/karty/Yellowstone.png"
+		image: "../assets/images/karty/Yellowstone.png"
 	},
     {
 		name: "Grand Canion",
 		country: "USA",
 		state: "hidden",
         visited: "",
-		image: "../../images/karty/GrandCanion.png"
+		image: "../assets/images/karty/GrandCanion.png"
 	},
     {
 		name: "Oslo",
 		country: "Norsko",
 		state: "hidden",
         visited: "",
-		image: "../../images/karty/Oslo.png"
+		image: "../assets/images/karty/Oslo.png"
 	},
     {
 		name: "Mont Saint-Michel",
 		country: "Francie",
 		state: "hidden",
         visited: "",
-		image: "../../images/karty/SaintMichel.png"
+		image: "../assets/images/karty/SaintMichel.png"
 	},
     {
 		name: "Étretat",
 		country: "Francie",
 		state: "hidden",
         visited: "",
-		image: "../../images/karty/Etretat.png"
+		image: "../assets/images/karty/Etretat.png"
 	},
     {
 		name: "Černobyl",
 		country: "Ukrajina",
 		state: "hidden",
         visited: "",
-		image: "../../images/karty/Cernobyl.png"
+		image: "../assets/images/karty/Cernobyl.png"
 	},
     {
 		name: "Machu Picchu",
 		country: "Peru",
 		state: "hidden",
         visited: "",
-		image: "../../images/karty/MachuPicchu.png"
+		image: "../assets/images/karty/MachuPicchu.png"
 	},
     {
 		name: "Jánošíkové Diery",
 		country: "Slovensko",
 		state: "revealed",
         visited: "2022-09-07",
-		image: "../../images/karty/JanosikoveDiery.png"
+		image: "../assets/images/karty/JanosikoveDiery.png"
 	},
 	{
 		name: "Kréta",
 		country: "Řecko",
 		state: "hidden",
         visited: "",
-		image: "../../images/karty/Kreta.png"
+		image: "../assets/images/karty/Kreta.png"
 	},
 	{
 		name: "Mount Rushmore",
 		country: "USA",
 		state: "hidden",
         visited: "",
-		image: "../../images/karty/MountRushmore.png"
+		image: "../assets/images/karty/MountRushmore.png"
 	},
 	{
 		name: "Národní parky",
 		country: "Norsko",
 		state: "hidden",
         visited: "",
-		image: "../../images/karty/Norsko.png"
+		image: "../assets/images/karty/Norsko.png"
 	},
 	{
 		name: "Tádž Mahal",
 		country: "Indie",
 		state: "hidden",
         visited: "",
-		image: "../../images/karty/TadzMahal.png"
+		image: "../assets/images/karty/TadzMahal.png"
 	},
 	{
 		name: "Srí Lanka",
 		country: "Srí Lanka",
 		state: "hidden",
         visited: "",
-		image: "../../images/karty/SriLanka.png"
+		image: "../assets/images/karty/SriLanka.png"
 	},
 	{
 		name: "Slovinsko",
 		country: "Slovinsko",
 		state: "hidden",
         visited: "",
-		image: "../../images/karty/Slovinsko.png"
+		image: "../assets/images/karty/Slovinsko.png"
 	},
 	{
 		name: "Maledivy",
 		country: "Maledivy",
 		state: "hidden",
         visited: "",
-		image: "../../images/karty/Maledivy.png"
+		image: "../assets/images/karty/Maledivy.png"
 	},
     /*{
 		name: "",
 		country: "",
 		state: "hidden",
         visited: "",
-		image: "../../images/karty/.png"
+		image: "../assets/images/karty/.png"
 	},*/
 ];
 
