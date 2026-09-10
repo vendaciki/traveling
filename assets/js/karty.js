@@ -478,6 +478,13 @@ const places = [
         visited: "",
 		image: "../assets/images/karty/Maledivy.png"
 	},
+	{
+		name: "Tunisko",
+		country: "Tunisko",
+		state: "revealed",
+        visited: "",
+		image: "../assets/images/karty/Tunisko.png"
+	},
     /*{
 		name: "",
 		country: "",
