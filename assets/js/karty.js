@@ -313,8 +313,8 @@ const places = [
     {
 		name: "Vídeň",
 		country: "Rakousko",
-		state: "hidden",
-        visited: "",
+		state: "revealed",
+        visited: "2017-09-28",
 		image: "../assets/images/karty/Viden.png"
 	},
     {
@@ -482,8 +482,15 @@ const places = [
 		name: "Tunisko",
 		country: "Tunisko",
 		state: "revealed",
-        visited: "",
+        visited: "2026-09-06",
 		image: "../assets/images/karty/Tunisko.png"
+	},
+	{
+		name: "Česká republika",
+		country: "Česko",
+		state: "revealed",
+        visited: "1990-10-05",
+		image: "../assets/images/karty/Cesko.png"
 	},
     /*{
 		name: "",
@@ -874,6 +881,26 @@ document.addEventListener("DOMContentLoaded", () => {
 		}
 	});
 
+	const homeCountry = document.querySelector('path.stat[data-country="CZ"]');
+	if (homeCountry) {
+		homeCountry.classList.add("domovina");
+		homeCountry.setAttribute("aria-label", "Česko – domovina");
+
+		const title = homeCountry.querySelector("title");
+		if (title) title.textContent = `${title.textContent} – domovina`;
+
+		const box = homeCountry.getBBox();
+		const marker = document.createElementNS("http://www.w3.org/2000/svg", "text");
+		marker.classList.add("domovina-marker");
+		marker.setAttribute("x", box.x + box.width / 2);
+		marker.setAttribute("y", box.y + box.height / 2);
+		marker.setAttribute("text-anchor", "middle");
+		marker.setAttribute("dominant-baseline", "central");
+		marker.setAttribute("aria-hidden", "true");
+		marker.textContent = "♥";
+		homeCountry.parentNode.appendChild(marker);
+	}
+
 });
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -956,6 +983,3 @@ document.addEventListener("DOMContentLoaded", () => {
 	}, { passive: false });
 
 });
-
-
-

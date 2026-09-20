@@ -1952,6 +1952,27 @@ svg .stat.navstiven:hover  {
   	fill: #007b04 !important;
 }
 
+/* DomovskĂˇ zemÄ› mĂˇ vlastnĂ­, teplĂ© zvĂ˝raznÄ›nĂ­. */
+svg .stat.domovina {
+	fill: #d99136 !important;
+	stroke: #7a4513;
+	stroke-width: 0.8;
+}
+
+svg .stat.domovina:hover {
+	fill: #b96d1d !important;
+}
+
+svg .domovina-marker {
+	fill: #c62828;
+	font-size: 12px;
+	font-weight: 700;
+	pointer-events: none;
+	paint-order: stroke;
+	stroke: #fff3e0;
+	stroke-width: 0.45px;
+}
+
 #counter {
 	margin-top: 10px;
 	font-weight: bold;
@@ -2363,4 +2384,3 @@ svg .stat:hover {
 	}
 
 }
-
